@@ -1,0 +1,59 @@
+{ "name": "Apperson Form 20170",
+  "row_height": 12.02,
+  "col_width": 18.00,
+  "page_size": [396.0, 770.0],
+  "slug_size": [11.5, 4.75, 2.0],
+  "fields": [
+   { "name": "Name",
+     "_type": "text",
+     "start": [60.0, 50.0],
+     "size": [21.25, 204.0]
+   },
+   { "name": "Teacher",
+     "_type": "text",
+     "start": [60.0, 71.0],
+     "size": [21.25, 204.0]
+   },
+   { "name": "Test",
+     "_type": "text",
+     "start": [60.0, 92.0],
+     "size": [21.25, 204.0]
+   },
+   { "name": "Date",
+     "_type": "text",
+     "start": [260.0, 50.0],
+     "size": [21.25, 82.25]
+   },
+   { "name": "Class",
+     "_type": "text",
+     "start": [260.0, 71.0],
+     "size": [21.25, 82.25]
+   },
+   { "name": "Period",
+     "_type": "text",
+     "start": [260.0, 92.0],
+     "size": [21.25, 82.25]
+   },
+   { "name": "Student ID Number",
+     "_type": "numeric",
+     "length": 10,
+     "row_height": 12.02,
+     "col_width": 18.0,
+     "start_col": 30.5,
+     "text_row": 135.5,
+     "slug_row": 144.5,
+     "zero_at_top": true
+   },
+   { "name": "Test ID",
+     "_type": "numeric",
+     "length": 6,
+     "row_height": 12.02,
+     "col_width": 18.0,
+     "start_col": 229.5,
+     "text_row": 135.5,
+     "slug_row": 144.5,
+     "zero_at_top": true
+   }
+   ]
+}
+   

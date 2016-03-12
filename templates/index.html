@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Pre Slugging</title>
+</head>
+<body>
+<h1>Upload CSV File</h1>
+<p>Upload a .csv file here.  The file should contain the following columns, in order:</p>
+<ol>
+<li>Student ID</li>
+<li>Team Number</li>
+<li>Student First Name</li>
+<li>Student Last Name</li>
+<li>Speech Room</li>
+<li>Speech Time</li>
+<li>Interview Room</li>
+<li>Interview Time</li>
+<li>Homeroom</li>
+<li>Seat</li>
+</ol>
+<form enctype="multipart/form-data" method="post">
+<label for="nspeech">How many speech judges?</label>
+<select id="nspeech" name="num_speech">
+  <option value="2">2</option>
+  <option value="3" selected="selected">3</option>
+  <option value="4">4</option>
+</select>
+<br/>
+<label for="ninterview">How many interview judges?</label>
+<select id="ninterview" name="num_interview">
+  <option value="2">2</option>
+  <option value="3" selected="selected">3</option>
+  <option value="4">4</option>
+</select><br/>
+
+<input type="file" name="csvfile">
+
+<input type="submit" name="submit" value="Upload">
+</form>
+<h2>Print Test Page</h2>
+<a href="{{url_for('testpage')}}">Download Test Page PDF</a>
+</body>
+</html>

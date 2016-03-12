@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Pre Slugging</title>
+</head>
+<body>
+<h1>Print PDFs</h1>
+<p>Loaded data for {{n_students}} students.</p>
+<h2>Objective</h2>
+<form action="{{url_for('printit', event='objective')}}" method="post">
+<div style="display:block;">
+<input type="hidden" name="data" value="{{ objective|json64 }}"/>
+<h3>Print Rooms</h3>
+{% for room in objective %}
+<input type="submit" name="room" value="{{room}}"/>
+{% if loop.index % 4 == 0 %}<br/>{% endif %}
+{% endfor %}
+</form>
+<h2>Speech</h2>
+<form action="{{url_for('printit', event='speech', num_judges=num_speech)}}" method="post">
+<div style="display:block;">
+<input type="hidden" name="data" value="{{ speech|json64 }}"/>
+<h3>Print Rooms</h3>
+{% for room in speech %}
+<input type="submit" name="room" value="{{room}}"/>
+{% if loop.index % 4 == 0 %}<br/>{% endif %}
+{% endfor %}
+</form>
+<h2>Interview</h2>
+<form action="{{url_for('printit', event='interview', num_judges=num_interview)}}" method="post">
+<div style="display:block;">
+<input type="hidden" name="data" value="{{ interview|json64 }}"/>
+<h3>Print Rooms</h3>
+{% for room in interview %}
+<input type="submit" name="room" value="{{room}}"/>
+{% if loop.index % 4 == 0 %}<br/>{% endif %}
+{% endfor %}
+</form>
+</body>
+</html>
